@@ -1,0 +1,30 @@
+; cPanel first:74.0.9 (update_time):1599652155 Cpanel::ZoneFile::VERSION:1.3 hostname:mid-2.uk-hosting-servers.com latest:90.0.5
+; Zone file for adao.co.uk
+$TTL 14400
+adao.co.uk.     86400   IN      SOA     ns1.ukservers.com.      servers.adao.co.uk.     (
+                                                2020072000 ;Serial Number
+                                                3600 ;refresh
+                                                7200 ;retry
+                                                1209600 ;expire
+                                                86400   )
+
+adao.co.uk.     86400   IN      NS      ns1.ukservers.com.
+adao.co.uk.     86400   IN      NS      c.ns.buddyns.com.
+
+
+adao.co.uk.     14400   IN      A       94.229.64.222
+
+adao.co.uk.     14400   IN      MX      0       adao.co.uk.
+
+mail    14400   IN      CNAME   adao.co.uk.
+www     14400   IN      CNAME   adao.co.uk.
+ftp     14400   IN      A       94.229.64.222
+webmail 14400   IN      A       94.229.64.222
+whm     14400   IN      A       94.229.64.222
+webdisk 14400   IN      A       94.229.64.222
+cpcalendars     14400   IN      A       94.229.64.222
+cpanel  14400   IN      A       94.229.64.222
+cpcontacts      14400   IN      A       94.229.64.222
+default._domainkey      14400   IN      TXT     "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxdCgACLgZmpGqzkscsnoeVOWvRCBY0l3hjFB0I7BmzrRbv9Z3chdw34UxIcEEdguVuyeghs2N4BuYQ3DfKledZkXBQmvhKN0bSyzTKj5evXEIvSVAO6uoTub6i5oMDSnXX2YgX+pMhaTdNQzjvD/FYxaaO7HgQm8M2TVCAnVaNLjyiZ7N+20+V/GqBNXXqc4s" j/c0sYMeKCsvXNVr6b/HSalV7lzEeaFamgJm4iD0Ao4me55k85hrO9P1u7V2b2DdUXZh+wvaJRXk152h04US9gQt/DB4GwiG8PIrn0+Z/8TSO1aWDZGRWAiLkVQlArHCIliUi34cGPVCnxHjptJHQIDAQAB\;
+_cpanel-dcv-test-record 14400   IN      TXT     _cpanel-dcv-test-record=qptdCtclC4nDnLHNTJAw5xHbudxEFMB_4ZDIgoWbqRkrKHd8tJIF6oZj9uXyQLwF
+~y
