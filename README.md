@@ -1,32 +1,16 @@
-# zoneparser
+# Zoneparser
 
-FIXME: description
+Convert BIND-style zone files into Clojure data.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Download from this repo.
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar zoneparser-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+```sh
+	lein run <filename>
+```
 
 ## License
 
