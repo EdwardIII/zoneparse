@@ -1,9 +1,12 @@
 (ns zoneparser.core
   (:require [instaparse.core :as insta])
+  (:require [clojure.pprint :refer [pprint]])
   (:gen-class))
 
 (def parse
-  "Example response:
+  "Pass in the zonefile as a string.
+
+  See example-output.clj
   "
   (insta/parser
      "S = (soa|record|variable|<comment>)+;
@@ -51,12 +54,7 @@
       number = #'[0-9]+'
       alphanum = #'[a-zA-Z0-9\\._\\-]+'"))
 
-;   (parse (slurp "a-records.db"))
-;   (parse (slurp "zone-mx.db"))
-
 (defn -main
   "Takes a zone file as a filename and prints out the resulting Clojure datastructure"
-  [& args]
-  (println (parse (slurp "example.db"))
-
-           ))
+  [filename & args]
+  (pprint (parse (slurp filename))))
